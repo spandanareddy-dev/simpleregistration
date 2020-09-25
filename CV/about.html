@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style type="text/css">
+        .polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: green;
+  padding: 10px;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(44, 221, 74, 0.9) 25%,
+      rgba(161, 170, 36, 0.1) 50%,
+      rgba(179, 219, 70, 0.8) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="view_port">
+        <div class="polling_message">
+          Welcome To Springlabs  <span style="margin-left: 100px;">Hello Guys!</span>
+        </div>
+        <div class="cylon_eye"></div>
+    </div>
+        <br>
+        <nav  class="nav" >
+           <h1 class="name" >springlabs</h1>
+       
+           <ul class="menu" >
+               <li><a href="index.html">Home</a></li>
+               <li><a href="About.html">About</a>
+               </li>
+               <li><a href="signup.html">Signup</a></li>
+               <li><a href="contact.html">Contct</a></li>
+               
+           </ul>
+       </nav>
+
+       
+    
+    
+</body>
+</html>
